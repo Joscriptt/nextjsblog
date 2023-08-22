@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: BeVietnamProB;
+
+  src: url("../public/font/BeVietnamProB.ttf");
+}
+@font-face {
+  font-family: BeVietnamProBo;
+
+  src: url("../public/font/BeVietnamProBo.ttf");
+}
+@font-face {
+  font-family: BeVietnamProExtB;
+
+  src: url("../public/font/BeVietnamProExtB.ttf");
+}
+@font-face {
+  font-family: BeVietnamProMedd;
+
+  src: url("../public/font/BeVietnamProMedd.ttf");
+}
+@font-face {
+  font-family: BeVietnamProReg;
+
+  src: url("../public/font/BeVietnamProReg.ttf");
+}
+
+.gradient {
+  height: 300px;
+  max-height: 300px;
+  width: 100%;
+  /* max-width: 640px; */
+  background: radial-gradient(at 27% 37%, rgb(0, 106, 255) 0px, transparent 0%),
+    radial-gradient(at 97% 21%, rgb(114, 252, 254) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgb(140, 9, 248) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%),
+    radial-gradient(at 89% 83%, rgb(169, 97, 241) 0px, transparent 70%);
+  position: absolute;
+
+  filter: blur(100px) saturate(250%);
+}
+
+.fluid {
+  font-size: clamp(48px, 5vw, 50px);
+}
