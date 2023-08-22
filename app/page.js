@@ -11,7 +11,7 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 import Skeleton from "./components/Skeleton";
 
-function page() {
+function HomePage() {
   const session = useSession({
     onUnauthenticated() {
       redirect("/login?callbackUrl=/");
@@ -88,4 +88,4 @@ function page() {
   );
 }
 
-export default page;
+export default HomePage;

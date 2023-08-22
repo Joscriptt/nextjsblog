@@ -19,7 +19,7 @@ const getPost = async () => {
   return res.json();
 };
 
-async function page({ params }) {
+async function PostDetails({ params }) {
   const session = await getServerSession(authOptions);
 
   if (!session) {
@@ -82,7 +82,7 @@ async function page({ params }) {
           <div className="mx-auto max-w-4xl px-6 my-56 z-10 relative">
             <div className=" space-y-10">
               {res?.map((post) => (
-                <div className="lg:flex gap-4 ">
+                <div key={post._id} className="lg:flex gap-4 ">
                   <Link href={`/postDetail/${post._id}`}>
                     <img
                       className="w-full cursor-pointer aspect-video object-cover lg:w-60 lg:h-44 rounded-lg "
@@ -116,4 +116,4 @@ async function page({ params }) {
   );
 }
 
-export default page;
+export default PostDetails;

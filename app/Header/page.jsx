@@ -11,7 +11,7 @@ import { signOut, useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-function page() {
+function Header() {
   const session = useSession({
     onUnauthenticated() {
       redirect("/login?callbackUrl=/");
@@ -72,4 +72,4 @@ function page() {
   );
 }
 
-export default page;
+export default Header;

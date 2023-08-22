@@ -13,7 +13,7 @@ import { useDropzone } from "react-dropzone";
 //   redirect("/?callbackUrl=/login");
 // }
 
-function page() {
+function Uploads() {
   const session = useSession();
   const router = useRouter();
 
@@ -153,4 +153,4 @@ function page() {
   );
 }
 
-export default page;
+export default Uploads;
